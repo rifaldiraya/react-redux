@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 import { ADD_AGE } from "../redux/actionType";
 
 class Tes extends React.Component {
@@ -8,6 +9,9 @@ class Tes extends React.Component {
       <div>
         <p>{this.props.usia}</p>
         <button onClick={this.props.handlePlus}>ADD AGE</button>
+        <Link to="/home">
+          <span>Home</span>
+        </Link>
       </div>
     );
   }
