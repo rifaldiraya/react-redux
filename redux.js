@@ -1,4 +1,5 @@
 const redux = require("redux");
+
 const initialState = {
   value: 0,
   age: 17,
