@@ -1,6 +1,2 @@
-const ActionType = {
-  ADD_AGE: "ADD_AGE",
-  CHANGE_VALUE: "CHANGE_VALUE",
-};
-
-export default ActionType;
+export const ADD_AGE = "ADD_AGE";
+export const CHANGE_VALUE = "CHANGE_VALUE";

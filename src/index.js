@@ -4,15 +4,11 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
-import rootReducer from "./redux/reducer";
-import { createStore } from "redux";
-import Tes from "./pages/Tes";
+import store from "./redux/store";
 // import store from "./redux/store";
 
-const storeRedux = createStore(rootReducer);
-
 ReactDOM.render(
-  <Provider store={storeRedux}>
+  <Provider store={store}>
     <App />
   </Provider>,
   document.getElementById("root")
